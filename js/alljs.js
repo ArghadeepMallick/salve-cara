@@ -426,7 +426,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-// const button = document.querySelector('.video');
 $(document).ready(function () {
     $(".video .owl-carousel .video_item").click(function () {
         let youtube_id = $(this).children('iframe').attr('src');
