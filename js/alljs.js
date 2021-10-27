@@ -5,9 +5,9 @@ $(document).ready(function () {
         dots: false,
         margin: 0,
         responsiveClass: true,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
         responsive: {
             0: {
                 items: 1,
@@ -19,7 +19,7 @@ $(document).ready(function () {
                 items: 1,
             },
         },
-    }); 
+    });
     $("#certificate-icon").owlCarousel({
         loop: true,
         nav: true,
@@ -132,7 +132,7 @@ $(document).ready(function () {
                 items: 1,
             },
             600: {
-                items: 3,
+                items: 2,
             },
             1000: {
                 items: 5,
@@ -149,7 +149,7 @@ $(document).ready(function () {
                 items: 1,
             },
             600: {
-                items: 3,
+                items: 2,
             },
             1000: {
                 items: 5,
@@ -166,7 +166,7 @@ $(document).ready(function () {
                 items: 1,
             },
             600: {
-                items: 3,
+                items: 2,
             },
             1000: {
                 items: 5,
@@ -176,7 +176,7 @@ $(document).ready(function () {
     $("#key_ing").owlCarousel({
         loop: true,
         nav: true,
-        
+
         responsiveClass: true,
         responsive: {
             0: {
@@ -268,7 +268,7 @@ $(document).ready(function () {
         loop: true,
         nav: false,
         dots: false,
-        
+
         responsiveClass: true,
         responsive: {
             0: {
@@ -425,3 +425,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+// const button = document.querySelector('.video');
+$(document).ready(function () {
+    $(".video .owl-carousel .video_item").click(function () {
+        let youtube_id = $(this).children('iframe').attr('src');
+
+        $('.video .modal .modal-dialog .modal-content .modal-body .video_id').attr("src", youtube_id);
+    })
+})

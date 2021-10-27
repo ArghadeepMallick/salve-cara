@@ -134,7 +134,7 @@ nav .menu-icon {color:#3A3A3A;font-size: 14px;text-decoration: none;font-weight:
 .top_trending .top_item .price img{width: 40px;}
 .top_trending .top_item .price h5{font-weight: 700;font-size: 18px; margin: 0 5px 0 0;}
 .top_trending .top_item .price p{margin: 0 10px 0 0; font-size: 14px;}
-.top_trending .top_item .price p.off{background: #82CB69;border-radius: 26px; padding: 0 10px; font-weight: 600; color: #fff; margin: 0 25px;}
+.top_trending .top_item .price p.off{background: #82CB69;border-radius: 26px; padding: 0 5px; font-weight: 600; color: #fff; margin: 0 25px;}
 .top_trending .top_item .cart{display: flex; justify-content: space-between; align-items: center; margin: 30px 0; padding: 0 20px;}
 .top_trending .top_item .cart h5.add{background: #EA6079;border-radius: 32px; color: #fff; padding: 10px; font-weight: 600;font-size: 14px;}
 .top_trending .top_item .cart h5.buy{background: #F2F3F4;border-radius: 32px; color: #000; padding: 10px 20px; font-weight: 600;font-size: 14px;}
@@ -152,7 +152,7 @@ nav .menu-icon {color:#3A3A3A;font-size: 14px;text-decoration: none;font-weight:
 
 .video.container .owl-carousel{border-radius: 8px; background: #FAF7F7;border: 1px solid #E5E5E5; padding: 10px;}
 .video.container .owl-carousel .video_item {position: relative;}
-.video.container .owl-carousel .video_item img.img{width: 225px; height: 318px; z-index: -1;}
+.video.container .owl-carousel .video_item iframe.img{width: 225px; height: 318px; z-index: -1;}
 .video.container .owl-carousel .video_item::before{content: ""; position: absolute; width: 225px; height: 318px;bottom: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6323880235688025) 0%, rgba(116,116,116,0.441911833092612) 47%, rgba(255,255,255,0) 100%);}
 .video.container .owl-carousel .video_item img.play{width: 50px; height: 50px; border-radius: 50%; position: absolute; z-index: 10; bottom: 3%; left: 5%;}
 .video .owl-carousel .owl-nav{display: flex;}
@@ -161,7 +161,7 @@ nav .menu-icon {color:#3A3A3A;font-size: 14px;text-decoration: none;font-weight:
 .video .owl-carousel .owl-nav button.owl-next span, .video .owl-carousel .owl-nav button.owl-prev span {display: none;}
 @media screen and (max-width: 768px){} 
 @media screen and (max-width: 430px){
-	.video.container .owl-carousel .video_item img.img,.video.container .owl-carousel .video_item::before{width: 100% !important; object-fit: cover;}
+	.video.container .owl-carousel .video_item iframe.img,.video.container .owl-carousel .video_item::before{width: 100% !important; object-fit: cover;}
 	.video.container .owl-carousel .video_item img.play{bottom: 5%;}
 } 
 
